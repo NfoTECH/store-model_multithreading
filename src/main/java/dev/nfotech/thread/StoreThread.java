@@ -6,8 +6,6 @@ import dev.nfotech.model.Product;
 
 import java.util.HashMap;
 
-import static dev.nfotech.model.Product.stock;
-
 public class StoreThread extends Thread{
     final Cashier cashier;
     Customer customer;
