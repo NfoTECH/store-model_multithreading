@@ -49,7 +49,6 @@ public class Main {
             Customer cus = customers.poll();
             //System.out.println("Total items in " + cus.getName() + " cart is " + cus.getNoOfItemCart() + ".");
 
-            //System.out.println(customers.size());
         }
         System.out.println("\nCarrot balance quantity before sales is " + Product.stock.get("Carrot").getQuantity()+ "\n");
 
