@@ -40,18 +40,7 @@ public class Main {
         cart5.add(new Product("Carrot", 10));
         clinton.setMyCart(cart5);
 
-
-        PriorityQueue<Customer> customers = new PriorityQueue<>(new Customer());
-        Collections.addAll(customers, jackson, richard, aliyah);
-
-        //System.out.println("\nSales made according to the QUANTITY of items on the cart");
-        while (!customers.isEmpty()) {
-            Customer cus = customers.poll();
-            //System.out.println("Total items in " + cus.getName() + " cart is " + cus.getNoOfItemCart() + ".");
-
-        }
         System.out.println("\nCarrot balance quantity before sales is " + Product.stock.get("Carrot").getQuantity()+ "\n");
-
 
         StoreThread thread1 = new StoreThread(cashier, aliyah, Product.stock);
         StoreThread thread2 = new StoreThread(cashier, richard, Product.stock);
