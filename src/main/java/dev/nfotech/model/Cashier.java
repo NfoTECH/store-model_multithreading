@@ -43,11 +43,11 @@ public class Cashier {
 
 
 
-    // If customer have enough cash, Complete transaction and issue receipt
+    //Check if customer have enough cash and complete transaction
     public void completeTransactionAndIssueReceipt(Customer customer, HashMap<String, Product> stock) {
         ArrayList<Product> cart = customer.getMyCart();
-        for (int i = toRemove.size() - 1; i >= 0; i--) {  //Remove items either not available  or out of stock
-            cart.remove(cart.get(toRemove.get(i)));       //remove by index didn't work, so is employed remove by getting the object by that index
+        for (int i = toRemove.size() - 1; i >= 0; i--) {
+            cart.remove(cart.get(toRemove.get(i)));
         }
         if (customer.getWallet() >= totalPrice) {
             double totalPrice = 0;
