@@ -10,7 +10,7 @@ public class Store {
     public static void readFile() {
         //String read = "";
         StringBuilder read = new StringBuilder();
-        String filePath = "/Users/decagon/IdeaProjects/week-4-task-NfoTECH/src/main/resources/sampledatafoodsales.csv";
+        String filePath = "/Users/decagon/Desktop/Personal_Repo/week-4-task-mutithreading/src/main/resources/sampledatafoodsales.csv";
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while((line = reader.readLine()) != null){
